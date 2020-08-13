@@ -158,12 +158,12 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 15px;
 
   &--fluid {
-    max-width: 1500px;
+    max-width: 1800px;
   }
 }
 
@@ -199,7 +199,7 @@ img {
 
 // Grechka
 .grechka {
-  padding-top: 75px;
+  padding-top: 20px;
   h1 {
     font-size: 80px;
     font-family: "FuturaPT-Bold";
