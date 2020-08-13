@@ -1,0 +1,335 @@
+@import "vars";
+
+* {
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "FuturaPT-Book";
+  font-size: 24px;
+  line-height: 1.3;
+  color: $text;
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.no-xl {
+  display: none;
+}
+
+.xl {
+  display: inline-block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &--fluid {
+    max-width: 1500px;
+  }
+}
+
+// Header
+.header__inner {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__insta {
+  margin-left: 40px;
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.header__phone {
+  color: $black;
+  font-size: 20px;
+  font-family: "FuturaPT-Demi";
+}
+
+// Grechka
+.grechka {
+  padding-top: 75px;
+  h1 {
+    font-size: 80px;
+    font-family: "FuturaPT-Bold";
+    color: $black;
+    margin-bottom: 30px;
+  }
+}
+
+.grechka__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grechka__content {
+  width: 40%;
+}
+
+.grechka__img {
+  width: 55%;
+}
+
+.grechka__suptitle {
+  color: $pink;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "FuturaPT-Demi";
+  margin-bottom: 20px;
+}
+
+.grechka__subtitle {
+  font-size: 30px;
+  color: $black;
+  margin-bottom: 40px;
+}
+
+.grechka__link {
+  color: $pink;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-color: $pink;
+  }
+}
+
+@media (max-width: $tablet) {
+  .no-md {
+    display: none;
+  }
+
+  .md {
+    display: inline-block;
+  }
+
+  .grechka__inner {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .grechka__content {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .no-xs {
+    display: none;
+  }
+
+  .xs {
+    display: inline-block;
+  }
+
+  .grechka {
+    padding-top: 40px;
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .grechka__content {
+    width: 100%;
+  }
+
+  .grechka__img {
+    width: 100%;
+  }
+
+  .header__right {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .header__phone {
+    order: 2;
+    font-size: 14px;
+  }
+}
+
+// Fonts
+@font-face {
+  font-family: "FuturaPT-Book";
+  src: url("../fonts/FuturaPT-Book.eot");
+  src: url("../fonts/FuturaPT-Book.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/FuturaPT-Book.woff") format("woff"),
+    url("../fonts/FuturaPT-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FuturaPT-Demi";
+  src: url("../fonts/FuturaPT-Demi.eot");
+  src: url("../fonts/FuturaPT-Demi.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/FuturaPT-Demi.woff") format("woff"),
+    url("../fonts/FuturaPT-Demi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FuturaPT-Bold";
+  src: url("../fonts/FuturaPT-Bold.eot");
+  src: url("../fonts/FuturaPT-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/FuturaPT-Bold.woff") format("woff"),
+    url("../fonts/FuturaPT-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
