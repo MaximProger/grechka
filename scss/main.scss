@@ -142,6 +142,7 @@ body {
   position: relative;
   overflow-x: hidden;
   min-width: 320px;
+  max-height: 100vh;
 }
 
 img {
@@ -200,6 +201,7 @@ img {
 // Grechka
 .grechka {
   padding-top: 20px;
+  height: 85vh;
   h1 {
     font-size: 80px;
     font-family: "FuturaPT-Bold";
