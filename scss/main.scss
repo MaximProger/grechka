@@ -169,8 +169,11 @@ img {
 }
 
 // Header
+.header {
+  padding-top: 10px;
+}
+
 .header__inner {
-  padding-top: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -200,7 +203,6 @@ img {
 
 // Grechka
 .grechka {
-  padding-top: 20px;
   height: 85vh;
   h1 {
     font-size: 80px;
